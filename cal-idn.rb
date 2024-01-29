@@ -11,7 +11,7 @@ class CalIdn < Formula
     def install
         ENV["GOPATH"] = buildpath
         path = buildpath/"src/github.com/arham09/cal-idn"
-        system "go", "get", "-u", "github.com/arham09/cal-idn"
+        path.install Dir["*"]
         cd path do
           system "go", "build", "-o", "#{bin}/cal-idn"
         end

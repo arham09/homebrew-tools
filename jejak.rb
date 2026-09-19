@@ -2,7 +2,7 @@ class Jejak < Formula
   desc "Repository intelligence and change-impact CLI for Go codebases"
   homepage "https://github.com/arham09/jejak"
   url "https://github.com/arham09/jejak/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "9f8612efc7a9deecaa4595616b52d37eac373a811d7ccf1e64171b32070a8213"
+  sha256 "c81cc28b26023da99b44fc82ad802893606fd87c9bdd02193469f54b54d33541"
   head "https://github.com/arham09/jejak.git", branch: "main"
 
   depends_on "go" => :build

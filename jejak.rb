@@ -2,11 +2,11 @@ class Jejak < Formula
   desc "Repository intelligence and change-impact CLI for Go codebases"
   homepage "https://github.com/arham09/jejak"
   url "https://github.com/arham09/jejak/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "a2adb71ac51d7d8b739237058cef0b5ff4882ef98e279c92df4002c51d41a816"
+  sha256 "9f8612efc7a9deecaa4595616b52d37eac373a811d7ccf1e64171b32070a8213"
   head "https://github.com/arham09/jejak.git", branch: "main"
 
-  depends_on "git"
   depends_on "go" => :build
+  depends_on "git"
 
   def install
     # Homebrew already supplies -s -w; only the release version is added.
@@ -21,7 +21,7 @@ class Jejak < Formula
     # The usage text lists the commands the agent workflow depends on.
     usage = shell_output("#{bin}/jejak --help")
     assert_match "Usage:", usage
-    ["init", "status", "impact", "context", "doctor"].each do |command|
+    %w[init status impact context doctor].each do |command|
       assert_match command, usage
     end
 

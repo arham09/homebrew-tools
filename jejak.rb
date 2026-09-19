@@ -1,8 +1,8 @@
 class Jejak < Formula
   desc "Repository intelligence and change-impact CLI for Go codebases"
   homepage "https://github.com/arham09/jejak"
-  url "https://github.com/arham09/jejak/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "6388942d8176257bf9820254551e0c498cbe9f36d7e597fa4c72db9321c2c9c1"
+  url "https://github.com/arham09/jejak/archive/refs/tags/v0.1.3.tar.gz"
+  sha256 "e7e883dde6ceb352915cb82edc4565f72506bc421ecb9eef34d22e80bffa74f1"
   license "MIT"
   head "https://github.com/arham09/jejak.git", branch: "main"
 
